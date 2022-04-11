@@ -53,7 +53,7 @@ const paths = {
 let isProd = false; // dev by default
 
 const clean = () => {
-  return del(['!app/.git', 'app//**/*'])
+  return del([`!${buildFolder}}/.git`, `${buildFolder}//**/*`])
 }
 
 //svg sprite
