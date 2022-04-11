@@ -1,0 +1,46 @@
+.menu-footer {
+  margin: 0;
+}
+
+.menu-footer__block {
+  &--order {
+    order: 10;
+  }
+}
+
+.menu-footer__list {
+  margin: 0;
+}
+
+.menu-footer__title {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+
+  &--small {
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--color-grey-light);
+  }
+}
+
+.menu-footer__content {
+  margin-left: 0;
+}
+
+.menu-footer__item {
+  margin-left: 0;
+
+  + .menu-footer__item {
+    margin-top: 10px;
+  }
+}
+
+.menu-footer__link {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  color: inherit;
+}

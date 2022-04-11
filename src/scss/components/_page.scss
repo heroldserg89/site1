@@ -1,0 +1,85 @@
+.page-catalog {
+  &__title {
+    grid-column: 2 span;
+    margin-bottom: 23px;
+  }
+
+  &__breadcrumbs {
+  }
+
+  &__wrapper {
+    @include desktop {
+      display: grid;
+      align-items: start;
+      grid-template-columns: 288px 1fr;
+      gap: 30px;
+    }
+  }
+
+  &__section-product {
+    padding-top: 40px;
+    padding-bottom: 27px;
+  }
+
+  &__content {
+    margin-bottom: 54px;
+  }
+}
+
+.page-product {
+  &__breadcrumbs {
+  }
+
+  &__content {
+    margin-bottom: 11px;
+  }
+
+  &__section-product {
+    margin-bottom: 10px;
+  }
+}
+
+.page-commerce {
+  overflow: hidden;
+
+  &__application {
+    margin-bottom: 38px;
+  }
+
+  &__stages {
+    margin-bottom: 40px;
+  }
+
+  &__benefits {
+    margin-bottom: 40px;
+  }
+
+  &__project {
+    margin-bottom: 35px;
+  }
+}
+
+.page-delivery {
+  // .page-delivery__bredcrumbs
+  &__bredcrumbs {
+  }
+
+  // .page-delivery__content
+  &__content {
+  }
+}
+
+.page-category {
+  // .page-category__section
+  &__section {
+    @include tablet {
+      padding-top: 40px;
+      padding-bottom: 50px;
+    }
+
+    @include desktop {
+      padding-top: 64px;
+      padding-bottom: 100px;
+    }
+  }
+}

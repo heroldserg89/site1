@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html class="html" lang="ru">
+
+@include('partials/html.html', {
+"title": "Магазин замков"
+})
+
+<body class="page">
+
+  @include('partials/header.html')
+  <main class="page__content main">
+    <h1 class="visually-hidden">Интернет-магазин замков Golden Soft</h1>
+    @include('partials/section-promo.html')
+    @include('partials/section-statistics.html')
+    @include('partials/section-advantages.html')
+    @include('partials/section-category.html')
+    @include('partials/section-products.html')
+  </main>
+  @include('partials/section-callback.html')
+  @include('partials/footer.html')
+</body>
+
+</html>

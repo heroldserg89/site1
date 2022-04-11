@@ -1,0 +1,9 @@
+.logo {
+  color: var(--color-black);
+
+  &__img {
+    width: inherit;
+    height: inherit;
+    color: inherit;
+  }
+}

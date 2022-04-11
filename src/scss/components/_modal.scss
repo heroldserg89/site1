@@ -1,0 +1,49 @@
+.modal-dialog {
+  margin: 51px 16px;
+
+  @include mobile-landscape {
+    margin-right: 40px;
+    margin-left: 40px;
+    max-width: 836px;
+  }
+
+  @include desktop {
+    margin-top: 112px;
+    margin-right: auto;
+    margin-bottom: 80px;
+    margin-left: auto;
+  }
+}
+
+.modal-dialog-scrollable {
+  height: calc(100% - 102px);
+
+  @include desktop {
+    height: calc(100% - 192px);
+  }
+}
+
+.modal-content {
+  border: none;
+  border-radius: 0;
+}
+
+.modal-header {
+  border-radius: 0;
+  padding: 24px 40px 16px;
+
+  @include tablet {
+    padding-top: 16px;
+  }
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-black);
+}
+
+.modal-dialog-scrollable .modal-body {
+  overflow-x: hidden;
+}

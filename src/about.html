@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="html" lang="ru">
+
+@include('partials/html.html', {
+"title": "О нас"
+})
+
+<body class="page">
+
+  @include('partials/header.html')
+  <main class="page__content main page-about">
+    <section class="page-about__breadcrumbs breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list list-reset">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--home" href="/">
+              <svg class="breadcrumbs__icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#home" />
+              </svg>
+              <span>Главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">О нас</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <article class="page-about__content">
+      <div class="container page-about__wrapper">
+        <div class="page-about__media">
+          <div class="page-about__video video">
+            <video class="video__content" src="" poster="./img/about/about-video-img.jpg"></video>
+            <button class="video__btn-play">
+              <span class="visually-hidden">Воспроизвести видео</span>
+            </button>
+          </div>
+        </div>
+        <div class="page-about__info">
+          <h1 class="page-about__title title">О нас</h1>
+          <h2 class="page-about__subtitle title">Компания <span>Golden Soft</span></h2>
+          <p class="page-about__text">Sit tempor ante justo amet duis. Ultricies cras eleifend elit, posuere et risus
+            non.
+            Id
+            et ut pellentesque consequat, amet erat gravida euismod pharetra.</p>
+        </div>
+      </div>
+      <section class="page-about__stats statistics statistics--dark">
+        <div class="container">
+          <h2 class="visually-hidden">Наша статистика</h2>
+          <dl class="statistics__list">
+            <div class="statistics__item">
+              <dt class="statistics__title">Счастливых клиентов</dt>
+              <dd class="statistics__desc">5,567</dd>
+            </div>
+            <div class="statistics__item">
+              <dt class="statistics__title">Продуктов на выбор</dt>
+              <dd class="statistics__desc">1245</dd>
+            </div>
+            <div class="statistics__item">
+              <dt class="statistics__title">Продаж в день</dt>
+              <dd class="statistics__desc">372</dd>
+            </div>
+            <div class="statistics__item">
+              <dt class="statistics__title">Лет на рынке</dt>
+              <dd class="statistics__desc">20</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+      <div class="container page-about__wrapper page-about__wrapper--right">
+        <div class="page-about__media">
+          <picture>
+            <source srcset="./img/about/about-img1.avif, ./img/about/about-img1@2x.avif 2x" type="image/avif">
+            <source srcset="./img/about/about-img1.webp, ./img/about/about-img1@2x.webp 2x" type="image/webp">
+            <img class="page-about__img" src="./img/about/about-img1.jpg" srcset="./img/about/about-img1@2x.jpg"
+              width="323" height="223" alt="" loading="lazy">
+          </picture>
+          <div class="page-about__img-mini">
+            <picture>
+              <source srcset="./img/about/about-img2.avif, ./img/about/about-img2@2x.avif 2x" type="image/avif">
+              <source srcset="./img/about/about-img2.webp, ./img/about/about-img2@2x.webp 2x" type="image/webp">
+              <img class="" src="./img/about/about-img2.jpg" srcset="./img/about/about-img2@2x.jpg" width="106"
+                height="147" alt="" loading="lazy">
+            </picture>
+          </div>
+        </div>
+        <div class="page-about__info">
+          <h2 class="page-about__title title">Наша миссия</h2>
+          <blockquote class="page-about__quote">
+            Sit tempor ante justo amet duis. Ultricies cras eleifend elit, posuere et risus non. Id et ut pellentesque
+            consequat, amet erat gravida euismod pharetra.
+          </blockquote>
+        </div>
+      </div>
+    </article>
+  </main>
+  <section class="callback">
+    <div class="container callback__wrapper">
+      <div class="callback__block">
+        <h2 class="callback__title title title--section ">Мы Вам перезвоним</h2>
+        <p class="callback__text">Если у вас возникли какие-то вопросы или проблемы, заполните форму и мы Вам
+          перезвоним.
+        </p>
+        <form class="callback__form form-callback form-callback--vertical" action="#" method="post">
+          <label class="callback__form-field" aria-label="Ваше имя">
+            <input class="callback__form-input" type="text" name="name" placeholder="Ваше имя">
+          </label>
+          <label class="callback__form-field" aria-label="Ваш телефон">
+            <input class="callback__form-input" type="tel" name="phone" placeholder="Ваш телефон">
+          </label>
+          <button class="callback__form-btn btn" type="submit">Отправить</button>
+        </form>
+      </div>
+      <div class="callback__contacts">
+        <h2 class="callback__contacts-heading title title--section ">Контакты</h2>
+        <dl class="callback__contacts-list">
+          <div class="callback__contacts-item">
+            <dt class="callback__contacts-title title title--small">Наш адрес</dt>
+            <dd class="callback__contacts-desc">Россия Ростов-на-Дону ул. Богачева, 16</dd>
+          </div>
+          <div class="callback__contacts-item">
+            <dt class="callback__contacts-title title title--small">Телефоны</dt>
+            <dd class="callback__contacts-desc">+7 (988) 565 00 38</dd>
+            <dd class="callback__contacts-desc">+375 33 662 82 56</dd>
+          </div>
+          <div class="callback__contacts-item">
+            <dt class="callback__contacts-title title title--small">Email</dt>
+            <dd class="callback__contacts-desc">vladpertcev@mail.ru</dd>
+            <dd class="callback__contacts-desc">korobko416@gmail.com</dd>
+          </div>
+        </dl>
+        <ul class="callback__gallery list-reset">
+          <li class="callback__gallery-item">
+            <picture>
+              <source srcset="./img/about/gallery-img1.avif, ./img/about/gallery-img1@2x.avif 2x" type="image/avif">
+              <source srcset="./img/about/gallery-img1.webp, ./img/about/gallery-img1@2x.webp 2x" type="image/webp">
+              <img class="callback__gallery-img" src="./img/about/gallery-img1.jpg"
+                srcset="./img/about/gallery-img1@2x.jpg" width="106" height="106" alt="" loading="lazy">
+            </picture>
+          </li>
+          <li class="callback__gallery-item">
+            <picture>
+              <source srcset="./img/about/gallery-img2.avif, ./img/about/gallery-img2@2x.avif 2x" type="image/avif">
+              <source srcset="./img/about/gallery-img2.webp, ./img/about/gallery-img2@2x.webp 2x" type="image/webp">
+              <img class="callback__gallery-img" src="./img/about/gallery-img2.jpg"
+                srcset="./img/about/gallery-img2@2x.jpg" width="106" height="106" alt="" loading="lazy">
+            </picture>
+          </li>
+          <li class="callback__gallery-item">
+            <picture>
+              <source srcset="./img/about/gallery-img3.avif, ./img/about/gallery-img3@2x.avif 2x" type="image/avif">
+              <source srcset="./img/about/gallery-img3.webp, ./img/about/gallery-img3@2x.webp 2x" type="image/webp">
+              <img class="callback__gallery-img" src="./img/about/gallery-img3.jpg"
+                srcset="./img/about/gallery-img3@2x.jpg" width="106" height="106" alt="" loading="lazy">
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+  @include('partials/footer.html')
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+.breadcrumbs {
+  &__list {
+    padding: 24px 0;
+
+    @include tablet {
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__item {
+    display: inline;
+
+    & + &::before {
+      content: "/";
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-black);
+
+    &:not([href]) {
+      color: var(--color-text-disable);
+    }
+
+    &--home {
+      position: relative;
+      padding-left: 20px;
+
+      @include tablet {
+        padding-left: 0;
+      }
+
+      svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        fill: currentColor;
+
+        @include tablet {
+          opacity: 0;
+        }
+      }
+
+      span {
+        position: absolute;
+        opacity: 0;
+
+        @include tablet {
+          position: static;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

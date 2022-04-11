@@ -1,0 +1,40 @@
+.section-products {
+  padding-top: 20px;
+  padding-bottom: 35px;
+
+  @include tablet {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  @include desktop {
+    padding-top: 50px;
+    padding-bottom: 92px;
+  }
+}
+
+.section-products__title {
+  margin-bottom: 26px;
+}
+
+.section-products__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-products__btn {
+  position: static;
+
+  @include only-mobile {
+    display: none;
+  }
+}
+
+.section-products__wrapper {
+  overflow: hidden;
+}
+
+.section-products__item {
+  width: 287px;
+}

@@ -1,0 +1,217 @@
+<div class="modal" id="cartModal" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header cart">
+        <h2 class="modal-title" id="commentModalLabel">Корзина</h2>
+        <button type="button" class="btn-close btn-reset" data-bs-dismiss="modal" aria-label="Закрыть">
+          <svg class="btn-close__icon" width="24" height="24">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body cart__body">
+        <ul class="cart__list list-reset">
+          <li class="cart__item cart-item">
+            <div class="cart-item__block-img">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="./img/cart/img1-desktop.avif, ./img/cart/img1-desktop@2x.avif 2x" type="image/avif">
+                <source media="(min-width: 768px)"
+                  srcset="./img/cart/img1-desktop.webp, ./img/cart/img1-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)"
+                  srcset="./img/cart/img1-desktop.webp, ./img/cart/img1-desktop@2x.webp 2x">
+                <source srcset="./img/cart/img1.avif, ./img/cart/img1@2x.avif 2x" type="image/avif">
+                <source srcset="./img/cart/img1.webp, ./img/cart/img1@2x.webp 2x" type="image/webp">
+                <img class="cart-item__img" src="./img/cart/img1.jpg" srcset="./img/cart/img1@2x.jpg" width="70"
+                  height="68" alt="" loading="lazy">
+              </picture>
+            </div>
+            <div class="cart-item__info">
+              <div class="cart-item__header">
+                <h3 class="cart-item__title">Дверной Замок Golden Soft для офиса</h3>
+                <button class="cart-item__btn-delete btn-icon btn-reset">
+                  <svg class="" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#delete"></use>
+                  </svg>
+                  <span class="btn-icon__text">Удалить</span>
+                </button>
+              </div>
+              <div class="cart-item__footer">
+                <div class="cart-item__counter">
+                  <button class="cart-item__counter-btn cart-item__counter-btn--minus btn-reset">
+                    <svg class="" width="16" height="16">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                  </button>
+                  <input class="cart-item__counter-input " type="number" name="counter" id="" value="1">
+                  <button class="cart-item__counter-btn cart-item__counter-btn--plus btn-reset">
+                    <svg class="" width="16" height="16">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="cart-item__price">33 000₽</div>
+              </div>
+            </div>
+            <p class="cart-item__bonus">
+              + Подарок: <a class="cart-item__bonus-link" href="">“Приложение к замкам Golden Service”</a>
+            </p>
+          </li>
+        </ul>
+        <div class="cart__price">
+          <span class="cart__price-text">Итого</span>
+          <span class="cart__price-value">66 000₽</span>
+        </div>
+        <h2 class="cart__subtitle">С этим покупают</h2>
+        <ul class="cart__concomitant list-reset">
+          <li class="cart__concomitant-item">
+            <article class="card-product card-product--horizontal">
+              <div class="card-product__img-wrapper">
+                <picture>
+                  <img class="card-product__img" src="img/products/product-img4.png" width="70" height="73" alt=""
+                    aria-labelledby="img_3">
+                </picture>
+              </div>
+              <div class="card-product__content">
+                <div class="card-product__rate stars-rate">
+                  <div class="stars-rate__indicator" aria-label="Рейтинг 5 из 5">
+                    <svg class="stars-rate__star stars-rate__star--fill" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star stars-rate__star--fill" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star stars-rate__star--fill" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                  </div>
+                  <a class="stars-rate__link" href="#">
+                    <span class="stars-rate__num">12 </span>
+                    отзывов
+                  </a>
+                </div>
+                <a class="card-product__link" href="#">
+                  <h3 class="card-product__title" id="img_3">Вариативный замок Golden Soft для отеля</h3>
+                </a>
+                <p class="card-product__price">
+                  7 000₽ <s>8 000₽</s>
+                </p>
+                <button class="card-product__btn btn-icon btn-reset">
+                  <svg class="" width="24" height="24">
+                    <use xlink:href="img/sprite.svg#plus"></use>
+                  </svg>
+                  <span class="btn-icon__text">Добавить</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="cart__concomitant-item">
+            <article class="card-product card-product--horizontal">
+              <div class="card-product__img-wrapper">
+                <picture>
+                  <img class="card-product__img" src="img/products/product-img4.png" width="70" height="73" alt=""
+                    aria-labelledby="img_3">
+                </picture>
+              </div>
+              <div class="card-product__content">
+                <div class="card-product__rate stars-rate">
+                  <div class="stars-rate__indicator" aria-label="Рейтинг 5 из 5">
+                    <svg class="stars-rate__star stars-rate__star--fill" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star stars-rate__star--fill" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star stars-rate__star--fill" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                  </div>
+                  <a class="stars-rate__link" href="#">
+                    <span class="stars-rate__num">12 </span>
+                    отзывов
+                  </a>
+                </div>
+                <a class="card-product__link" href="#">
+                  <h3 class="card-product__title" id="img_3">Вариативный замок Golden Soft для отеля</h3>
+                </a>
+                <p class="card-product__price">
+                  7 000₽ <s>8 000₽</s>
+                </p>
+                <button class="card-product__btn btn-icon btn-reset">
+                  <svg class="" width="24" height="24">
+                    <use xlink:href="img/sprite.svg#plus"></use>
+                  </svg>
+                  <span class="btn-icon__text">Добавить</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="cart__concomitant-item">
+            <article class="card-product card-product--horizontal">
+              <div class="card-product__img-wrapper">
+                <picture>
+                  <img class="card-product__img" src="img/products/product-img4.png" width="70" height="73" alt=""
+                    aria-labelledby="img_3">
+                </picture>
+              </div>
+              <div class="card-product__content">
+                <div class="card-product__rate stars-rate">
+                  <div class="stars-rate__indicator" aria-label="Рейтинг 5 из 5">
+                    <svg class="stars-rate__star stars-rate__star--fill" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star stars-rate__star--fill" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star stars-rate__star--fill" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                  </div>
+                  <a class="stars-rate__link" href="#">
+                    <span class="stars-rate__num">12 </span>
+                    отзывов
+                  </a>
+                </div>
+                <a class="card-product__link" href="#">
+                  <h3 class="card-product__title" id="img_3">Вариативный замок Golden Soft для отеля</h3>
+                </a>
+                <p class="card-product__price">
+                  7 000₽ <s>8 000₽</s>
+                </p>
+                <button class="card-product__btn btn-icon btn-reset">
+                  <svg class="" width="24" height="24">
+                    <use xlink:href="img/sprite.svg#plus"></use>
+                  </svg>
+                  <span class="btn-icon__text">Добавить</span>
+                </button>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer cart__btn">
+        <button class="btn">Оформить заказ</button>
+        <button class="btn btn--not-fill btn-reset " data-bs-dismiss="modal">Продолжить покупки</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html class="html" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <!-- <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Доставка и оплата</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page">
+
+  <header class="header">
+  <div class="header__wrapper container">
+    <nav class="header__nav nav-header">
+      <button class="nav-header__burger burger" data-offcanvas="menu">
+        <span class="burger__icon"></span>
+      </button>
+      <div class="nav-header__menu offcanvas" data-offcanvas-target="menu">
+        <div class="offcanvas__overlay"></div>
+        <div class="nav-header__wrapper offcanvas__wrapper offcanvas__wrapper--left">
+          <div class="nav-header__top offcanvas__header offcanvas__header--logo">
+            <a class="nav-header__logo logo" href="#">
+              <svg class="logo__img" width="33" height="27">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <button class="nav-header__close offcanvas__close btn-close btn-reset">
+              <svg class="btn-close__icon" width="24" height="24">
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="nav-header__nav-site offcanvas__body nav-site list-reset">
+            <li class="nav-site__item">
+              <a class="nav-site__link" href="./">Главная</a>
+            </li>
+            <li class="nav-site__item offcanvas offcanvas--sub">
+              <a class="nav-site__link nav-site__link--drop offcanvas__link" href="#">
+                <span class="offcanvas__title">Каталог</span>
+                <svg class="nav-site__link-icon" width="24" height="24">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+              <div class="nav-site__dropmenu offcanvas__wrapper offcanvas__wrapper--right">
+                <div class="offcanvas__header">
+                  <button class="offcanvas__back btn-reset btn-icon">
+                    <svg class="" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#arrow-left"></use>
+                    </svg>
+                  </button>
+                  <span class="offcanvas__header-title"></span>
+                </div>
+                <div class="offcanvas__body">
+                  <ul class="list-category list-category--header list-reset">
+                    <li class="list-category__item">
+                      <a class="list-category__link" href="#">
+                        <picture>
+                          <img class="list-category__img" src="img/category/category-img1.jpg" width="161" height="161"
+                            alt="Категория 1">
+                        </picture>
+                        <h3 class="list-category__title">Накладные<br> электронные замки</h3>
+                      </a>
+                    </li>
+                    <li class="list-category__item">
+                      <a class="list-category__link" href="#">
+                        <picture>
+                          <img class="list-category__img" src="img/category/category-img2.jpg" width="161" height="161"
+                            alt="Категория 1">
+                        </picture>
+                        <h3 class="list-category__title">Врезные электроные замки</h3>
+                      </a>
+                    </li>
+                    <li class="list-category__item">
+                      <a class="list-category__link" href="#">
+                        <picture>
+                          <img class="list-category__img" src="img/category/category-img3.jpg" width="161" height="161"
+                            alt="Категория 1">
+                        </picture>
+                        <h3 class="list-category__title">Замки для квартиры</h3>
+                      </a>
+                    </li>
+                    <li class="list-category__item">
+                      <a class="list-category__link" href="#">
+                        <picture>
+                          <img class="list-category__img" src="img/category/category-img4.jpg" width="161" height="161"
+                            alt="Категория 1">
+                        </picture>
+                        <h3 class="list-category__title">Замки для дома</h3>
+                      </a>
+                    </li>
+                    <li class="list-category__item">
+                      <a class="list-category__link" href="#">
+                        <picture>
+                          <img class="list-category__img" src="img/category/category-img5.jpg" width="161" height="161"
+                            alt="Категория 1">
+                        </picture>
+                        <h3 class="list-category__title">Замки для отелей</h3>
+                      </a>
+                    </li>
+                    <li class="list-category__item">
+                      <a class="list-category__link" href="#">
+                        <picture>
+                          <img class="list-category__img" src="img/category/category-img6.jpg" width="161" height="161"
+                            alt="Категория 1">
+                        </picture>
+                        <h3 class="list-category__title">Замки для офиса</h3>
+                      </a>
+                    </li>
+                    <li class="list-category__item">
+                      <a class="list-category__link" href="#">
+                        <picture>
+                          <img class="list-category__img" src="img/category/category-img8.jpg" width="161" height="161"
+                            alt="Категория 1">
+                        </picture>
+                        <h3 class="list-category__title">Замки для шкафчиков</h3>
+                      </a>
+                    </li>
+                    <li class="list-category__item">
+                      <a class="list-category__link" href="#">
+                        <picture>
+                          <img class="list-category__img" src="img/category/category-img7.jpg" width="161" height="161"
+                            alt="Категория 1">
+                        </picture>
+                        <h3 class="list-category__title">Замки для раздевалок</h3>
+                      </a>
+                    </li>
+                  </ul>
+                  <a class="list-category__link-all btn" href="#">Смотреть все</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-site__item">
+              <a class="nav-site__link" href="./commerce.html">Оптовая продажа</a>
+            </li>
+            <li class="nav-site__item">
+              <a class="nav-site__link" href="./about.html">О нас</a>
+            </li>
+          </ul>
+          <div class="nav-header__contacts offcanvas__bottom header-contacts">
+            <a class="header-contacts__item header-contacts__item--phone" href="tel:+79665588499">
+              <svg class="header-contacts__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+              +7 966 558-84-99
+            </a>
+            <a class="header-contacts__item phone-callback only-mobile" href="#">
+              Обратный звонок
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-header__actions nav-actions">
+        <a class="nav-actions__item" href="#">
+          <svg class="nav-actions__item-icon" width="32" height="32">
+            <use xlink:href="img/sprite.svg#like"></use>
+          </svg>
+          <span class="nav-actions__badge">1</span>
+          <span class="visually-hidden">Избранное</span>
+        </a>
+        <a class="nav-actions__item" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+          <svg class="nav-actions__item-icon" width="32" height="32">
+            <use xlink:href="img/sprite.svg#cart"></use>
+          </svg>
+          <span class="nav-actions__badge">1</span>
+          <span class="visually-hidden">Корзина</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+  <div class="header__promo">
+    <div class="header__promo-wrapper container">
+      <p class="header__promo-text">Скидка 10% по промокоду «ZAMOK» на все заказы до 10.09</p>
+      <a class="header__promo-phone phone-callback phone-callback--secondary only-desktop" href="#">Обратный звонок</a>
+    </div>
+  </div>
+</header>
+
+  <main class="page__content main page-delivery">
+    <section class="page-delivery__bredcrumbs breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list list-reset">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--home" href="/">
+              <svg class="breadcrumbs__icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#home" />
+              </svg>
+              <span>Главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">Доставка и оплата</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <article class="page-delivery__content delivery">
+      <h1 class="visually-hidden title title--section">Доставка и оплата</h1>
+      <div class="container">
+        <div class="delivery__block delivery-method">
+          <h2 class="delivery__heading title">Доставка</h2>
+          <ul class="delivery-method__list list-reset">
+            <li class="delivery-method__item">
+              <div class="delivery-method__logo delivery-method__logo--blue">
+                <img src="./img/delivery/logo-mail-russia.svg" width="70" height="13" alt="">
+              </div>
+              <picture>
+                <source
+                  srcset="./img/delivery/delivery-method-img1.avif, ./img/delivery/delivery-method-img1@2x.avif 2x"
+                  type="image/avif">
+                <source
+                  srcset="./img/delivery/delivery-method-img1.webp, ./img/delivery/delivery-method-img1@2x.webp 2x"
+                  type="image/webp">
+                <img class="delivery-method__img" src="./img/delivery/delivery-method-img1.jpg"
+                  srcset="./img/delivery/delivery-method-img1@2x.jpg" width="343" height="185" alt="" loading="lazy">
+              </picture>
+              <h3 class="delivery-method__title title title--small title--decore">Почта России</h3>
+              <ul class="delivery-method__benefits list-reset">
+                <li class="bullet delivery-method__benefits-item">Получение посылки согласно условиям перевозчика</li>
+                <li class="bullet delivery-method__benefits-item">Доставка в течении 1-2 дней</li>
+              </ul>
+            </li>
+            <li class="delivery-method__item">
+              <div class="delivery-method__logo delivery-method__logo--black">
+                <img src="./img/delivery/logo-dellin.svg" width="68" height="30" alt="">
+              </div>
+              <picture>
+                <source
+                  srcset="./img/delivery/delivery-method-img2.avif, ./img/delivery/delivery-method-img2@2x.avif 2x"
+                  type="image/avif">
+                <source
+                  srcset="./img/delivery/delivery-method-img2.webp, ./img/delivery/delivery-method-img2@2x.webp 2x"
+                  type="image/webp">
+                <img class="delivery-method__img" src="./img/delivery/delivery-method-img2.jpg"
+                  srcset="./img/delivery/delivery-method-img2@2x.jpg" width="343" height="185" alt="" loading="lazy">
+              </picture>
+              <h3 class="delivery-method__title title title--small title--decore">Деловые линии</h3>
+              <ul class="delivery-method__benefits list-reset">
+                <li class="bullet delivery-method__benefits-item">Получение посылки согласно условиям перевозчика</li>
+                <li class="bullet delivery-method__benefits-item">Доставка в течении 1-2 дней</li>
+              </ul>
+            </li>
+            <li class="delivery-method__item">
+              <div class="delivery-method__logo delivery-method__logo--green">
+                <img src="./img/delivery/logo-cdek.svg" width="58" height="25" alt="">
+              </div>
+              <picture>
+                <source
+                  srcset="./img/delivery/delivery-method-img3.avif, ./img/delivery/delivery-method-img3@2x.avif 2x"
+                  type="image/avif">
+                <source
+                  srcset="./img/delivery/delivery-method-img3.webp, ./img/delivery/delivery-method-img3@2x.webp 2x"
+                  type="image/webp">
+                <img class="delivery-method__img" src="./img/delivery/delivery-method-img3.jpg"
+                  srcset="./img/delivery/delivery-method-img3@2x.jpg" width="343" height="185" alt="" loading="lazy">
+              </picture>
+              <h3 class="delivery-method__title title title--small title--decore">СДЭК</h3>
+              <ul class="delivery-method__benefits list-reset">
+                <li class="bullet delivery-method__benefits-item">Получение посылки согласно условиям перевозчика</li>
+                <li class="bullet delivery-method__benefits-item">Доставка в течении 1-2 дней</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="delivery__block payment">
+          <div class="delivery__block-wrapper">
+            <h2 class="delivery__heading title">Оплата</h2>
+            <ul class="payment__list list-reset">
+              <li class="payment__item">
+                <h3 class="payment__title payment__title--card title title--small">Банковская карта</h3>
+                <p class="payment__text">Онлайн заказ можно оплатить с помощью банковской карты, выпущенной на
+                  территории
+                  России. Оформляя заказ на сайте, в пункте «Оплата» выберите «Банковская карта». После переадресации на
+                  страницу системы безопасных платежей, необходимо лишь подтвердить платеж.</p>
+              </li>
+              <li class="payment__item">
+                <h3 class="payment__title payment__title--cash title title--small">Оплата при получении товара</h3>
+                <p class="payment__text">Онлайн заказ можно оплатить непосредственно при получении. Оформляя заказ на
+                  сайте,
+                  в пункте «Оплата» выберите «Оплата при получении товара». После того как товар будет доставлен к
+                  заказчику, после полного осмотра, оплатите стоимость товара удобным для вас способом.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="delivery__block">
+          <div class="delivery__block-wrapper">
+            <h2 class="delivery__heading title">Гарантии</h2>
+            <h3 class="delivery__subtitle title">На все товары, приобретенные в нашем магазине, предоставляется
+              гарантия,
+              дающая
+              право на:</h3>
+            <ul class="delivery__list list-reset">
+              <li class="delivery__list-item">обмен или возврат товара в срок до 14 дней с момента приобретения;</li>
+              <li class="delivery__list-item">обмен или возврат товара на основании акта, выданного Авторизованным
+                сервисным
+                центром по результатам гарантийного обслуживания (в соответствии с Законом РФ «О защите прав
+                потребителей»).
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="delivery__block">
+          <div class="delivery__block-wrapper">
+            <h2 class="delivery__heading title">Возврат товара</h2>
+            <h3 class="delivery__subtitle title">Подготовьте, пожалуйста, все необходимые документы:</h3>
+            <ul class="delivery__list list-reset">
+              <li class="delivery__list-item">
+                выданный продавцом расчетный документ (чек / акт приема-передачи / накладная или др.), подтверждающий
+                факт
+                приобретения;
+              </li>
+              <li class="delivery__list-item">
+                гарантийный талон;
+              </li>
+              <li class="delivery__list-item">
+                документ, удостоверяющий личность;
+              </li>
+              <li class="delivery__list-item">
+                идентификационный налоговый номер (ИНН);
+              </li>
+              <li class="delivery__list-item">
+                в случае оплаты покупки банковской картой — актуальные реквизиты карточного счета.
+              </li>
+            </ul>
+            <h3 class="delivery__subtitle title">Передайте товар на гарантийное обслуживание, обязательно приложите
+              указанные
+              выше документы.</h3>
+            <p class="delivery__text">
+              Полезная информация о правах потребителя в случае приобретения им товара ненадлежащего качества — Закона
+              РФ
+              «О защите прав потребителей».
+            </p>
+            <p class="delivery__text">
+              Уважаемый покупатель, приносим извинения за неудобства, случившиеся в связи с выходом из строя. По вашему
+              обращению будут приняты все меры для быстрого решения вашей проблемы.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <footer class="footer">
+  <div class="container footer__wrapper">
+    <div class="footer__top">
+      <a class="footer__logo logo" href="#">
+        <svg class="logo__img" width="70" height="57" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#logo" />
+        </svg>
+      </a>
+      <ul class="footer__social social-list list-reset">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <svg class="social-list__icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#vk" />
+            </svg>
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <svg class="social-list__icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#twitter" />
+            </svg>
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <svg class="social-list__icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#facebook" />
+            </svg>
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <dl class="footer__middle footer__menu menu-footer">
+      <div class="menu-footer__block">
+        <dt class="menu-footer__title">Навигация</dt>
+        <dd class="menu-footer__content">
+          <ul class="menu-footer__list list-reset">
+            <li class="menu-footer__item">
+              <a class="menu-footer__link" href="./">Главная</a>
+            </li>
+            <li class="menu-footer__item">
+              <a class="menu-footer__link" href="./catalog.html">Каталог</a>
+            </li>
+            <li class="menu-footer__item">
+              <a class="menu-footer__link" href="./commerce.html"> Оптовая продажа</a>
+            </li>
+            <li class="menu-footer__item">
+              <a class="menu-footer__link" href="./about.html">О нас</a>
+            </li>
+          </ul>
+        </dd>
+      </div>
+      <div class="menu-footer__block">
+        <dt class="menu-footer__title">Наши контакты</dt>
+        <dd class="menu-footer__content">
+          <dl class="menu-footer__sublist">
+            <div class="menu-footer__item">
+              <dt class="menu-footer__title  menu-footer__title--small">Телефоны</dt>
+              <dd class="menu-footer__item">
+                <a class="menu-footer__link" href="tel:+79885650038">+7 988 565-00-38</a>
+              </dd>
+              <dd class="menu-footer__item">
+                <a class="menu-footer__link" href="tel:+375336628256">+375 33 662 82 56</a>
+              </dd>
+            </div>
+            <div class="menu-footer__item">
+              <dt class="menu-footer__title menu-footer__title--small">Email</dt>
+              <dd class="menu-footer__item">
+                <a class="menu-footer__link" href="mailto:vladpertcev@mail.ru">vladpertcev@mail.ru</a>
+              </dd>
+              <dd class="menu-footer__item">
+                <a class="menu-footer__link" href="mailto:korobko416@gmail.com">korobko416@gmail.com</a>
+              </dd>
+            </div>
+          </dl>
+        </dd>
+      </div>
+      <div class="menu-footer__block menu-footer__block--order">
+        <dt class="menu-footer__title">Другое</dt>
+        <dd class="menu-footer__content">
+          <ul class="menu-footer__list list-reset">
+            <li class="menu-footer__item">
+              <a class="menu-footer__link" href="./devilery.html">Доставка и оплата</a>
+            </li>
+            <li class="menu-footer__item">
+              <a class="menu-footer__link" href="#">Гарантии</a>
+            </li>
+            <li class="menu-footer__item">
+              <a class="menu-footer__link" href="#"> Возврат товара</a>
+            </li>
+          </ul>
+        </dd>
+      </div>
+      <div class="menu-footer__block">
+        <dt class="menu-footer__title">Наш адрес</dt>
+        <dd class="menu-footer__content">
+          <address class="menu-footer__address">Россия, Ростов-на-Дону ул. Богачева, 16</address>
+          <address class="menu-footer__address menu-footer__address--only-desctop">Беларусь, Солигорск ул. Ленина, 10б
+          </address>
+        </dd>
+      </div>
+    </dl>
+    <div class="footer__bottom">
+      <small class="footer__copyright">© Golden Soft All rights reserved.</small>
+    </div>
+  </div>
+</footer>
+<div class="modal" id="cartModal" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header cart">
+        <h2 class="modal-title" id="commentModalLabel">Корзина</h2>
+        <button type="button" class="btn-close btn-reset" data-bs-dismiss="modal" aria-label="Закрыть">
+          <svg class="btn-close__icon" width="24" height="24">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body cart__body">
+        <ul class="cart__list list-reset">
+          <li class="cart__item cart-item">
+            <div class="cart-item__block-img">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="./img/cart/img1-desktop.avif, ./img/cart/img1-desktop@2x.avif 2x" type="image/avif">
+                <source media="(min-width: 768px)"
+                  srcset="./img/cart/img1-desktop.webp, ./img/cart/img1-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)"
+                  srcset="./img/cart/img1-desktop.webp, ./img/cart/img1-desktop@2x.webp 2x">
+                <source srcset="./img/cart/img1.avif, ./img/cart/img1@2x.avif 2x" type="image/avif">
+                <source srcset="./img/cart/img1.webp, ./img/cart/img1@2x.webp 2x" type="image/webp">
+                <img class="cart-item__img" src="./img/cart/img1.jpg" srcset="./img/cart/img1@2x.jpg" width="70"
+                  height="68" alt="" loading="lazy">
+              </picture>
+            </div>
+            <div class="cart-item__info">
+              <div class="cart-item__header">
+                <h3 class="cart-item__title">Дверной Замок Golden Soft для офиса</h3>
+                <button class="cart-item__btn-delete btn-icon btn-reset">
+                  <svg class="" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#delete"></use>
+                  </svg>
+                  <span class="btn-icon__text">Удалить</span>
+                </button>
+              </div>
+              <div class="cart-item__footer">
+                <div class="cart-item__counter">
+                  <button class="cart-item__counter-btn cart-item__counter-btn--minus btn-reset">
+                    <svg class="" width="16" height="16">
+                      <use xlink:href="img/sprite.svg#minus"></use>
+                    </svg>
+                  </button>
+                  <input class="cart-item__counter-input " type="number" name="counter" id="" value="1">
+                  <button class="cart-item__counter-btn cart-item__counter-btn--plus btn-reset">
+                    <svg class="" width="16" height="16">
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="cart-item__price">33 000₽</div>
+              </div>
+            </div>
+            <p class="cart-item__bonus">
+              + Подарок: «<a class="cart-item__bonus-link" href="">Приложение к замкам Golden Service</a>»
+            </p>
+          </li>
+        </ul>
+        <div class="cart__price">
+          <span class="cart__price-text">Итого</span>
+          <span class="cart__price-value">66 000₽</span>
+        </div>
+        <h2 class="cart__subtitle">С этим покупают</h2>
+        <ul class="cart__concomitant list-reset">
+          <li class="cart__concomitant-item">
+            <article class="card-product card-product--horizontal">
+              <div class="card-product__img-wrapper">
+                <picture>
+                  <img class="card-product__img" src="img/products/product-img4.png" width="70" height="73" alt=""
+                    aria-labelledby="img_3">
+                </picture>
+              </div>
+              <div class="card-product__content">
+                <div class="card-product__rate stars-rate">
+                  <div class="stars-rate__indicator" aria-label="Рейтинг 5 из 5">
+                    <svg class="stars-rate__star stars-rate__star--fill" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star stars-rate__star--fill" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star stars-rate__star--fill" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                  </div>
+                  <a class="stars-rate__link" href="#">
+                    <span class="stars-rate__num">12 </span>
+                    отзывов
+                  </a>
+                </div>
+                <a class="card-product__link" href="#">
+                  <h3 class="card-product__title" id="img_3">Вариативный замок Golden Soft для отеля</h3>
+                </a>
+                <p class="card-product__price">
+                  7 000₽ <s>8 000₽</s>
+                </p>
+                <button class="card-product__btn btn-icon btn-reset">
+                  <svg class="" width="24" height="24">
+                    <use xlink:href="img/sprite.svg#plus"></use>
+                  </svg>
+                  <span class="btn-icon__text">Добавить</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="cart__concomitant-item">
+            <article class="card-product card-product--horizontal">
+              <div class="card-product__img-wrapper">
+                <picture>
+                  <img class="card-product__img" src="img/products/product-img4.png" width="70" height="73" alt=""
+                    aria-labelledby="img_3">
+                </picture>
+              </div>
+              <div class="card-product__content">
+                <div class="card-product__rate stars-rate">
+                  <div class="stars-rate__indicator" aria-label="Рейтинг 5 из 5">
+                    <svg class="stars-rate__star stars-rate__star--fill" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star stars-rate__star--fill" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star stars-rate__star--fill" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                  </div>
+                  <a class="stars-rate__link" href="#">
+                    <span class="stars-rate__num">12 </span>
+                    отзывов
+                  </a>
+                </div>
+                <a class="card-product__link" href="#">
+                  <h3 class="card-product__title" id="img_3">Вариативный замок Golden Soft для отеля</h3>
+                </a>
+                <p class="card-product__price">
+                  7 000₽ <s>8 000₽</s>
+                </p>
+                <button class="card-product__btn btn-icon btn-reset">
+                  <svg class="" width="24" height="24">
+                    <use xlink:href="img/sprite.svg#plus"></use>
+                  </svg>
+                  <span class="btn-icon__text">Добавить</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="cart__concomitant-item">
+            <article class="card-product card-product--horizontal">
+              <div class="card-product__img-wrapper">
+                <picture>
+                  <img class="card-product__img" src="img/products/product-img4.png" width="70" height="73" alt=""
+                    aria-labelledby="img_3">
+                </picture>
+              </div>
+              <div class="card-product__content">
+                <div class="card-product__rate stars-rate">
+                  <div class="stars-rate__indicator" aria-label="Рейтинг 5 из 5">
+                    <svg class="stars-rate__star stars-rate__star--fill" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star stars-rate__star--fill" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star stars-rate__star--fill" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                    <svg class="stars-rate__star" width="16" height="16" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#star" />
+                    </svg>
+                  </div>
+                  <a class="stars-rate__link" href="#">
+                    <span class="stars-rate__num">12 </span>
+                    отзывов
+                  </a>
+                </div>
+                <a class="card-product__link" href="#">
+                  <h3 class="card-product__title" id="img_3">Вариативный замок Golden Soft для отеля</h3>
+                </a>
+                <p class="card-product__price">
+                  7 000₽ <s>8 000₽</s>
+                </p>
+                <button class="card-product__btn btn-icon btn-reset">
+                  <svg class="" width="24" height="24">
+                    <use xlink:href="img/sprite.svg#plus"></use>
+                  </svg>
+                  <span class="btn-icon__text">Добавить</span>
+                </button>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer cart__btn">
+        <button class="btn">Оформить заказ</button>
+        <button class="btn btn--not-fill btn-reset " data-bs-dismiss="modal">Продолжить покупки</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+
+</html>

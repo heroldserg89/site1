@@ -1,0 +1,41 @@
+.stars-rate {
+  display: flex;
+  align-items: center;
+
+  &__indicator {
+    display: flex;
+  }
+
+  &__star {
+    display: block;
+    fill: none;
+    stroke: var(--color-grey-light);
+
+    &:not(:last-child) {
+      margin-right: 6px;
+    }
+
+    &--fill {
+      fill: var(--color-orange);
+      stroke: var(--color-orange);
+    }
+  }
+
+  &__link {
+    margin-left: 8px;
+    color: inherit;
+    font-size: 13px;
+    line-height: 21px;
+    text-decoration: none;
+  }
+
+  &__num {
+    &::before {
+      content: "(";
+    }
+
+    &::after {
+      content: ")";
+    }
+  }
+}

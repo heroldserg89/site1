@@ -1,0 +1,89 @@
+.application {
+  padding: 24px 0;
+  background-color: var(--color-bg-light);
+
+  @include tablet {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @include desktop {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  // .application__wrapper
+  &__wrapper {
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 48px;
+
+    @include tablet {
+      column-gap: 30px;
+      align-items: center;
+      grid-template-columns: 300px 1fr;
+    }
+
+    @include desktop {
+      column-gap: 64px;
+      align-items: center;
+      grid-template-columns: 500px 1fr;
+    }
+  }
+
+  // .application__title
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  // .application__text
+  &__text {
+    margin: 0;
+  }
+
+  // .application__form
+  &__form {
+    border: 1px solid var(--color-stroke);
+    padding: 24px 16px;
+    background-color: var(--color-white);
+
+    @include desktop {
+      padding: 32px;
+    }
+  }
+
+  &__input-group {
+    display: grid;
+    grid-template-rows: auto;
+    margin-bottom: 11px;
+    gap: 16px;
+
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__form-field {
+    &--wide {
+      grid-column: 2 span;
+    }
+  }
+
+  &__checkbox-group {
+    margin-bottom: 24px;
+
+    .form__checkbox {
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  &__form-text {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+}

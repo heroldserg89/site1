@@ -1,0 +1,21 @@
+.price {
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  // .price__actual
+  &__actual {
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  // .price__old
+  &__old {
+    margin-left: 12px;
+    color: var(--color-text-disable);
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

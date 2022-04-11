@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html class="html" lang="ru">
+
+@include('partials/html.html', {
+"title": "Оптовая закупка"
+})
+
+<body class="page">
+  @include('partials/header.html')
+  <main class="page__commerce page-commerce">
+    <h1 class="visually-hidden">Оптовая продажа</h1>
+    <section class="page-commerce__application application">
+      <div class="container application__wrapper">
+        <div class="application__headline">
+          <h2 class="application__title title title--section">Мы поможем Вам<br> просчитать стоимость</h2>
+          <p class="application__text">Vitae, urna, massa dictumst morbi ut id dui nulla. Purus a velit sem viverra.
+            Nunc
+            ac quis donec nunc eu blandit ante nibh. Sit felis nulla donec mauris quis nulla velit.</p>
+        </div>
+        <form class="application__form" action="#" method="post">
+          <h3 class="application__form-title">Оформление заявки</h3>
+          <div class="application__input-group">
+            <label class="application__form-field field">
+              <span class="field__title field-title">Имя</span>
+              <input class="field__input" type="text" name="name" placeholder="Ваше имя">
+            </label>
+            <label class="application__form-field field">
+              <span class="field__title field-title">Название компании</span>
+              <input class="field__input" type="text" name="name-company" placeholder="Имя Вашей компании">
+            </label>
+            <label class="application__form-field field">
+              <span class="field__title field-title">Номер телефона</span>
+              <input class="field__input" type="tel" name="tel" placeholder="+7 (_ _ _) _ _  _ _  _ _ _">
+            </label>
+            <label class="application__form-field application__form-field--wide field">
+              <span class="field__title field-title">Код товара</span>
+              <input class="field__input" type="text" name="product-code"
+                placeholder="Введите название или артикул товара">
+            </label>
+            <label class="application__form-field field">
+              <span class="field__title field-title">Количество</span>
+              <input class="field__input" type="number" name="number" placeholder="Введите количество товара">
+            </label>
+          </div>
+          <div class="application__checkbox-group">
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="options" value="1" checked="">
+              <svg class="checkbox__icon" width="16" height="16">
+                <use xlink:href="img/sprite.svg#check"></use>
+              </svg>
+              <div class="checkbox__title">
+                <span class="chechbox__text">Нанесение персонального логотипа
+                  (бесплатно)</span>
+              </div>
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="options" value="1" checked="">
+              <svg class="checkbox__icon" width="16" height="16">
+                <use xlink:href="img/sprite.svg#check"></use>
+              </svg>
+              <div class="checkbox__title">
+                <span class="chechbox__text">Помощь в монтажных работах (бесплатно)</span>
+              </div>
+            </label>
+          </div>
+          <p class="application__form-text">
+            <span>Приблизительная стоимость</span>
+            <span></span>
+          </p>
+          <button class="form__btn btn" type="submit">Отправить заявку</button>
+        </form>
+      </div>
+    </section>
+    <section class="page-commerce__stages stages">
+      <div class="container">
+        <h2 class="stages__heading title">Как мы работаем</h2>
+        <ol class="stages__list list-reset">
+          <li class="stages__item">
+            <div class="stages__img-wrapper">
+              <picture>
+                <source srcset="./img/stages/img1.avif, ./img/stages/img1@2x.avif 2x" type="image/avif">
+                <source srcset="./img/stages/img1.webp, ./img/stages/img1@2x.webp 2x" type="image/webp">
+                <img class="stages__img" src="./img/stages/img1.jpg" srcset="./img/stages/img1@2x.jpg" width="343"
+                  height="260" alt="" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="stages__title">Оформление заявки</h3>
+            <p class="stages__text">Вы оставляете заявку на сайте или связываетесь с нами по указанному на сайте
+              номеру
+              телефона</p>
+
+          </li>
+          <li class="stages__item">
+            <div class="stages__img-wrapper">
+              <picture>
+                <source srcset="./img/stages/img2.avif, ./img/stages/img2@2x.avif 2x" type="image/avif">
+                <source srcset="./img/stages/img2.webp, ./img/stages/img2@2x.webp 2x" type="image/webp">
+                <img class="stages__img" src="./img/stages/img2.jpg" srcset="./img/stages/img2@2x.jpg" width="343"
+                  height="260" alt="" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="stages__title">Согласование</h3>
+            <p class="stages__text">Мы консультируем Вас, согласовываем стоимость и точное время приезда нашего
+              специалиста</p>
+          </li>
+          <li class="stages__item">
+            <div class="stages__img-wrapper">
+              <picture>
+                <source srcset="./img/stages/img3.avif, ./img/stages/img3@2x.avif 2x" type="image/avif">
+                <source srcset="./img/stages/img3.webp, ./img/stages/img3@2x.webp 2x" type="image/webp">
+                <img class="stages__img" src="./img/stages/img3.jpg" srcset="./img/stages/img3@2x.jpg" width="343"
+                  height="260" alt="" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="stages__title">Отправка товара и установка</h3>
+            <p class="stages__text">Наш специалист по монтажу замков выезжает к Вам в точно зазначеное время по
+              согласованному адресу</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section class="page-commerce__benefits benefits">
+      <div class="container">
+        <h2 class="benefits__heading title">Почему стоит выбрат нас</h2>
+        <div class="benefits__wrapper">
+          <div class="benefits__img-wrapper">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="./img/benefits/img-desktop.avif, ./img/benefits/img-desktop@2x.avif 2x" type="image/avif">
+              <source media="(min-width: 768px)"
+                srcset="./img/benefits/img-desktop.webp, ./img/benefits/img-desktop@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)"
+                srcset="./img/benefits/img-desktop.webp, ./img/benefits/img-desktop@2x.webp 2x">
+              <source srcset="./img/benefits/img.avif, ./img/benefits/img@2x.avif 2x" type="image/avif">
+              <source srcset="./img/benefits/img.webp, ./img/benefits/img@2x.webp 2x" type="image/webp">
+              <img class="benefits__img" src="./img/benefits/img.jpg" srcset="./img/benefits/img@2x.jpg" width="343"
+                height="272" alt="" loading="lazy">
+            </picture>
+          </div>
+          <ul class="benefits__list list-reset">
+            <li class="benefits__item">
+              <div class="benefits__headline">
+                <div class="benefits__icon">
+                  <img class="" src="./img/advantage-icon1.svg" width="16" height="16" alt="">
+                </div>
+                <h3 class="benefits__title">Возврат удвоенной стоимости</h3>
+              </div>
+              <p class="benefits__text benefits__text--decore">
+                За каждый отправленый товар который окажеться бракованным, мы вернем вам двойную стоимость.
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__headline">
+                <div class="benefits__icon">
+                  <img class="" src="./img/advantage-icon4.svg" width="16" height="16" alt="">
+                </div>
+                <h3 class="benefits__title">Монтаж</h3>
+              </div>
+              <p class="benefits__text benefits__text--decore">
+                Проводим монтажные работы любой сложности и в любое удобное для Вас время
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__headline">
+                <div class="benefits__icon">
+                  <img class="" src="./img/advantage-icon5.svg" width="16" height="16" alt="">
+                </div>
+                <h3 class="benefits__title">Брендирование продукта</h3>
+              </div>
+              <p class="benefits__text benefits__text--decore">
+                Мы нанесем Ваш логотип любой сложности на свою продукцию, чтобы прибавить ей эксклюзивности
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__headline">
+                <div class="benefits__icon">
+                  <img class="" src="./img/advantage-icon1.svg" width="16" height="16" alt="">
+                </div>
+                <h3 class="benefits__title">Брендирование продукта</h3>
+              </div>
+              <p class="benefits__text">
+                Мы нанесем Ваш логотип любой сложности на свою продукцию, чтобы прибавить ей эксклюзивности
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="page-commerce__project project">
+      <div class="container">
+        <h2 class="project__heading title">Наши крупные проекты</h2>
+        <div class="project__wrapper swiper">
+          <ul class="project__list list-reset swiper-wrapper">
+            <li class="project__item swiper-slide">
+              <div class="project__img-wrapper">
+                <picture>
+                  <source srcset="./img/project/project1.avif, ./img/project/project1@2x.avif 2x" type="image/avif">
+                  <source srcset="./img/project/project1.webp, ./img/project/project1@2x.webp 2x" type="image/webp">
+                  <img class="project__img" src="./img/project/project1.jpg" srcset="./img/project/project1@2x.jpg"
+                    width="311" height="199" alt="" loading="lazy">
+                </picture>
+              </div>
+              <div class="project__info">
+                <img class="project__logo" src="./img/project/project1.svg" width="104" height="25" alt="">
+                <h3 class="project__title">Проект для гостинницы<br> Radisson Hotels</h3>
+                <ul class=" project__list-work list-reset">
+                  <li class="bullet">Установлено 123 Вариативных замка Golden Soft для отеля</li>
+                  <li class="bullet">Было нанесено личный брендинг на все замки</li>
+                  <li class="bullet">Были проведены монтажные работы, также была произведена помощь в подключении замков
+                    к
+                    системе</li>
+                </ul>
+                <p class="project__price">
+                  Бюджет - <span class="project__price-num">$5000</span>
+                </p>
+              </div>
+            </li>
+            <li class="project__item swiper-slide">
+              <div class="project__img-wrapper">
+                <picture>
+                  <source srcset="./img/project/project1.avif, ./img/project/project1@2x.avif 2x" type="image/avif">
+                  <source srcset="./img/project/project1.webp, ./img/project/project1@2x.webp 2x" type="image/webp">
+                  <img class="project__img" src="./img/project/project1.jpg" srcset="./img/project/project1@2x.jpg"
+                    width="311" height="199" alt="" loading="lazy">
+                </picture>
+              </div>
+              <div class="project__info">
+                <img class="project__logo" src="/img/project/project1.svg" width="104" height="25" alt="">
+                <h3 class="project__title">Проект для гостинницы<br> Radisson Hotels</h3>
+                <ul class=" project__list-work list-reset">
+                  <li class="bullet">Установлено 123 Вариативных замка Golden Soft для отеля</li>
+                  <li class="bullet">Было нанесено личный брендинг на все замки</li>
+                  <li class="bullet">Были проведены монтажные работы, также была произведена помощь в подключении замков
+                    к
+                    системе</li>
+                </ul>
+                <p class="project__price">
+                  Бюджет - <span class="project__price-num">$5000</span>
+                </p>
+              </div>
+            </li>
+            <li class="project__item swiper-slide">
+              <div class="project__img-wrapper">
+                <picture>
+                  <source srcset="./img/project/project1.avif, ./img/project/project1@2x.avif 2x" type="image/avif">
+                  <source srcset="./img/project/project1.webp, ./img/project/project1@2x.webp 2x" type="image/webp">
+                  <img class="project__img" src="./img/project/project1.jpg" srcset="./img/project/project1@2x.jpg"
+                    width="311" height="199" alt="" loading="lazy">
+                </picture>
+              </div>
+              <div class="project__info">
+                <img class="project__logo" src="/img/project/project1.svg" width="104" height="25" alt="">
+                <h3 class="project__title">Проект для гостинницы<br> Radisson Hotels</h3>
+                <ul class=" project__list-work list-reset">
+                  <li class="bullet">Установлено 123 Вариативных замка Golden Soft для отеля</li>
+                  <li class="bullet">Было нанесено личный брендинг на все замки</li>
+                  <li class="bullet">Были проведены монтажные работы, также была произведена помощь в подключении замков
+                    к
+                    системе</li>
+                </ul>
+                <p class="project__price">
+                  Бюджет - <span class="project__price-num">$5000</span>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-control">
+          <button class="swiper-button-prev btn-reset btn-icon">
+            <svg width="24" height="24" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#arrow-left" />
+            </svg>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <div class="swiper-pagination"></div>
+          <button class="swiper-button-next btn-reset btn-icon">
+            <svg width="24" height="24" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#arrow-right" />
+            </svg>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="callback">
+    <div class="container">
+      <h2 class="callback__title title title--section">Остались вопросы?</h2>
+      <p class="callback__text callback__text--left">Если у вас возникли какие-то вопросы по поводу оптовых заказов,
+        заполните форму и мы Вам перезвоним.
+      </p>
+      <form class="callback__form form-callback" action="#" method="post">
+        <label class="callback__form-field" aria-label="Ваше имя">
+          <input class="callback__form-input" type="text" name="name" placeholder="Ваше имя">
+        </label>
+        <label class="callback__form-field" aria-label="Ваш телефон">
+          <input class="callback__form-input" type="tel" name="phone" placeholder="Ваш телефон">
+        </label>
+        <button class="callback__form-btn btn" type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+  @include('partials/footer.html')
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+.data-list {
+  margin: 0;
+
+  @include tablet {
+    display: grid;
+    column-gap: 30px;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  // .data-list__item
+  &__item {
+    display: grid;
+    grid-template-columns: 180px auto;
+    padding: 16px 12px;
+    gap: 16px;
+
+    @include desktop {
+      grid-template-columns: 260px auto;
+    }
+
+    &:nth-child(odd) {
+      background-color: var(--color-bg-grey);
+    }
+  }
+
+  // .data-list__title
+  &__title {
+    min-width: 180px;
+    font-weight: 500;
+    color: var(--color-black);
+  }
+
+  // .data-list__desc
+  &__desc {
+    margin-left: 0;
+    font-size: 12px;
+    line-height: 20px;
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}

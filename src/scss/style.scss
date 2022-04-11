@@ -1,0 +1,60 @@
+// normalize.css
+@import "./vendor/normalize";
+@import "./vendor/nouislider";
+@import "../../node_modules/choices.js/public/assets/styles/choices.min";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/modal";
+
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/btn";
+@import "./components/burger";
+@import "./components/title";
+@import "./components/header";
+
+// @import "./components/header2";
+@import "./components/swiper";
+@import "./components/modal";
+@import "./components/logo";
+@import "./components/promo";
+@import "./components/statistics";
+@import "./components/advantages";
+@import "./components/section-category";
+@import "./components/section-products";
+@import "./components/card-product";
+@import "./components/list-category";
+@import "./components/callback";
+@import "./components/menu-footer";
+@import "./components/footer";
+@import "./components/social-list";
+@import "./components/breadcrumbs";
+@import "./components/catalog-filter";
+@import "./components/stars-rate";
+@import "./components/pagination";
+@import "./components/section-desc";
+@import "./components/catalog";
+@import "./components/single-product";
+@import "./components/color-chooser";
+@import "./components/price";
+@import "./components/tabs";
+@import "./components/data-list";
+@import "./components/product-desc";
+@import "./components/comments";
+@import "./components/single-comment";
+@import "./components/application";
+@import "./components/form";
+@import "./components/stages";
+@import "./components/benefits";
+@import "./components/project";
+@import "./components/devilery";
+@import "./components/about";
+@import "./components/page";
+@import "./components/cart";

@@ -1,0 +1,14 @@
+.social-list {
+  display: flex;
+  align-items: center;
+}
+
+.social-list__item {
+  & + .social-list__item {
+    margin-left: 24px;
+  }
+}
+
+.social-list__icon {
+  fill: var(--color-white);
+}
