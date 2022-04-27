@@ -1,1 +1,1 @@
- https://heroldserg89.github.io/page-zamok/
+https://heroldserg89.github.io/site1/
